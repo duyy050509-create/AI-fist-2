@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang Trải nghiệm Ngũ Hành Sơn</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#54cf17",
+            "background-light": "#f6f8f6",
+            "background-dark": "#162111",
+          },
+          fontFamily: {
+            "display": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 sm:px-10">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-solid border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between whitespace-nowrap px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 py-3 max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-[-0.015em]">Ngũ Hành Sơn</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/index.html">Trang chủ</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/trang_di_sản_ngũ_hành_sơn/code.html">Di sản</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/trang_trải_nghiệm_ngũ_hành_sơn/code.html">Trải nghiệm</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/trang_thư_viện_ngũ_hành_sơn/code.html">Thư viện</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/trang_lên_kế_hoạch_chuyến_đi/code.html">Lên kế hoạch</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="/trang_liên_hệ_ngũ_hành_sơn/code.html">Liên hệ</a>
+</div>
+<button onclick="window.location.href='trang_lên_kế_hoạch_chuyến_đi/code.html'" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-background-dark text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Bắt đầu hành trình</span>
+</button>
+</div>
+<div class="lg:hidden">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</div>
+</div>
+</header>
+<main class="py-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 pb-5">
+<a class="text-[#6f8863] dark:text-gray-400 text-base font-medium leading-normal" href="#">Trang chủ</a>
+<span class="text-[#6f8863] dark:text-gray-400 text-base font-medium leading-normal">/</span>
+<span class="text-[#131811] dark:text-gray-100 text-base font-medium leading-normal">Trải nghiệm</span>
+</div>
+<!-- HeaderImage -->
+<div class="w-full">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[400px]" data-alt="Panoramic view of the Marble Mountains in Da Nang, Vietnam under a clear blue sky" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 45%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDt_r-_6c_qXC2Y046s0m4Qjf5IidAZcEZzTiNsipmiKWbHkFaOkoXBAgrN5Oe8sSOzH_e6Whh5tChsuEdnuyXo3ZlxgPVqBGG2lNWh1EXeyvLwgMYEwexrw9vPzrSxMESYaSFZCjRcdfJcNLwXUKRbXf4vpTpqIHIuzDkG1iiXcaVd6PmSlp1Uarfjur764QmTD34VPRDM2rW2HBlaCJrXEGKKYJiz4ysbNAf3rKWe0IPl2nRPReb9Y1IJ4vuwI6yuLxyKdrZrcA");'>
+<div class="flex p-8"><p class="text-white tracking-light text-4xl font-bold leading-tight">Trải nghiệm Ngũ Hành Sơn</p></div>
+</div>
+</div>
+<!-- BodyText Introduction -->
+<p class="text-[#131811] dark:text-gray-300 text-base font-normal leading-relaxed pt-8 pb-10">
+                Ngũ Hành Sơn không chỉ là một danh lam thắng cảnh mà còn là nơi hội tụ của những trải nghiệm văn hóa, tâm linh và phiêu lưu kỳ thú. Từ việc chinh phục những đỉnh núi đá vôi, khám phá hang động huyền bí, đến viếng thăm những ngôi chùa cổ kính, mỗi hoạt động đều mang lại một góc nhìn riêng biệt về vùng đất này.
+            </p>
+<!-- Experience Sections -->
+<div class="space-y-16">
+<!-- Experience 1: Caves -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<img class="w-full h-auto rounded-xl object-cover aspect-square" data-alt="Sunlight streaming into a large, dark cave, illuminating a statue of Buddha." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYcA7eIufjZQscSO5hLYQcsGWchlxRZO-_kYd4mwKql44NpTlvMCbgth6Uqu_t9aj00D5nuleUvrYT-qsTgdiyoALtGAFsdtKVgzwJ1pSyJTiKZ7NT0Wly3yiyCo2dwHVF3qljhJaoDGMOTO9CFevNWfWq-GyDumdjHKDKcblGDh3LvjnNNTghtvO-9bA4AvRHRslePFvKXC2I_p-SE5vwYP_ZFFExfqgHK26wzLYwlBGGWvAYRlHhVnowNGy2mUFaNAHh__Wdkg"/>
+<div>
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em]">Khám phá hệ thống hang động huyền bí</h2>
+<p class="text-[#131811] dark:text-gray-300 text-base font-normal leading-relaxed mt-4 mb-6">
+                    Hệ thống hang động tại Ngũ Hành Sơn mang vẻ đẹp kỳ ảo và đậm chất tâm linh. Động Huyền Không và Động Âm Phủ là hai trong số những hang động nổi bật nhất, mỗi nơi kể một câu chuyện riêng về trời, đất và thế giới tâm linh theo quan niệm dân gian.
+                  </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">2-3 giờ khám phá</span>
+</div>
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">moving</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Mức độ: Dễ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience 2: Hiking -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="md:order-2">
+<img class="w-full h-auto rounded-xl object-cover aspect-square" data-alt="A stone staircase leading up a mountain, surrounded by lush green trees and ancient structures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0P1uqpYtmDu60y-MVSHCocA8T_dAcZkqrBowVctYKLR42RfMKHw17BQp-CBV-52oCGw84rTOzqVR92Y8A2z2f5eHgwmKcR8HUItc9J7Nwt1mck72voPFqEJDGYYb42ggUI8RuMZT0l3_0Xd0o7eSvuo8o9cxtDSEDa6f_qDt8ARxefljEP9xVuKZ9rM9tjI3IqHo8Ry3bpHmUQc7u9RFga07YisIjpuBLSgdsuWsSqo40TTZ2bZxyryWO3Tu28o9_Xpe394MtzQ"/>
+</div>
+<div class="md:order-1">
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em]">Chinh phục các đỉnh núi</h2>
+<p class="text-[#131811] dark:text-gray-300 text-base font-normal leading-relaxed mt-4 mb-6">
+                    Leo lên các đỉnh núi của Ngũ Hành Sơn là một trải nghiệm tuyệt vời để thử thách bản thân và chiêm ngưỡng toàn cảnh thành phố Đà Nẵng và bờ biển dài thơ mộng. Con đường lên đỉnh Thủy Sơn sẽ dẫn bạn qua những bậc thang đá cổ kính và các vọng giang đài.
+                  </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">timer</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">1.5 - 2 giờ</span>
+</div>
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">directions_walk</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Cần giày đi bộ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience 3: Pagodas -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<img class="w-full h-auto rounded-xl object-cover aspect-square" data-alt="An ornate, traditional Asian pagoda with intricate roof details, set against a backdrop of mountains." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCxq6YR-n2i8esaymAbzS4n8inLhwC768Oul-8PaSxDjhzQe9fiFlejU1HsLSzYBDwXUhSUPYw8H0sAwkWCCMY1IA3jE99bIf_k6ckgJCy3WKvXLFmgnFy7RA0r6NLvrxOhE__Lb7AmY7GxYDRa6W1W2cv4k_nhXIt0JZOkX3jSArxIKnYTL9LJ6g_ARqd5ldW8ZQs0JM2juMXjGhDkhZpW_yXdS5wQJm52jnENZipkMNEwgFYFfGhymaVZgQYjE-Tw2tyVAktXw"/>
+<div>
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em]">Viếng thăm các ngôi chùa cổ kính</h2>
+<p class="text-[#131811] dark:text-gray-300 text-base font-normal leading-relaxed mt-4 mb-6">
+                    Ngũ Hành Sơn là một trung tâm Phật giáo quan trọng với nhiều ngôi chùa cổ có giá trị lịch sử và kiến trúc. Chùa Tam Thai, chùa Linh Ứng là những điểm đến tâm linh, mang lại cảm giác bình yên và thanh tịnh cho du khách.
+                  </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">self_improvement</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Không gian thanh tịnh</span>
+</div>
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">checkroom</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Trang phục lịch sự</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Experience 4: Stone Village -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="md:order-2">
+<img class="w-full h-auto rounded-xl object-cover aspect-square" data-alt="Close-up of a large, intricately carved stone statue of a guardian lion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwfC4A0Brup_jN_E_xSB2rtjfs678omexB6iKJ1IZ7yJHA9z_CHX8tQjoTsXcYK5Ii_gAzloTR3_1-DVh0-myEWQxqkU1Y1IAdm6OnnzCON6i09N-tUxP5wqSlQpDVDMrpPIVyS8ViHdZx71Xcoz2_-neOe3bydA8BIoJpp2qMzX7Gv3csVcmVlnZJxFFSRN0xkRqa2YjAiYfTv1MXJZKSgzwsfGz8Q6zOxGSso_GSYJxJFMl9ygEQ2RuUT00NL0HQ5BtJ8dTlRg"/>
+</div>
+<div class="md:order-1">
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em]">Làng nghề điêu khắc đá Non Nước</h2>
+<p class="text-[#131811] dark:text-gray-300 text-base font-normal leading-relaxed mt-4 mb-6">
+                    Nằm ngay dưới chân núi, làng nghề Non Nước có lịch sử hàng trăm năm. Đây là nơi bạn có thể chiêm ngưỡng tài hoa của các nghệ nhân qua từng tác phẩm điêu khắc đá tinh xảo và tìm hiểu về một nét văn hóa truyền thống độc đáo của địa phương.
+                  </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">brush</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Di sản văn hóa</span>
+</div>
+<div class="flex items-center gap-3 bg-white dark:bg-gray-800/50 p-3 rounded-lg flex-1">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<span class="text-sm font-medium text-[#131811] dark:text-gray-200">Mua sắm quà lưu niệm</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Practical Info -->
+<div class="mt-20 bg-white dark:bg-gray-800/50 p-8 rounded-xl">
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">Chuẩn bị cho chuyến đi của bạn</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="inline-flex items-center justify-center size-12 bg-primary/20 text-primary rounded-full mb-3">
+<span class="material-symbols-outlined">wb_sunny</span>
+</div>
+<h3 class="font-bold text-[#131811] dark:text-gray-100 mb-1">Thời điểm lý tưởng</h3>
+<p class="text-sm text-[#131811] dark:text-gray-300">Từ tháng 2 đến tháng 8, thời tiết khô ráo, nắng đẹp, thuận lợi cho việc tham quan.</p>
+</div>
+<div class="text-center">
+<div class="inline-flex items-center justify-center size-12 bg-primary/20 text-primary rounded-full mb-3">
+<span class="material-symbols-outlined">footprint</span>
+</div>
+<h3 class="font-bold text-[#131811] dark:text-gray-100 mb-1">Mang gì theo?</h3>
+<p class="text-sm text-[#131811] dark:text-gray-300">Giày thể thao thoải mái, trang phục gọn nhẹ, nước uống và một chút đồ ăn nhẹ.</p>
+</div>
+<div class="text-center">
+<div class="inline-flex items-center justify-center size-12 bg-primary/20 text-primary rounded-full mb-3">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<h3 class="font-bold text-[#131811] dark:text-gray-100 mb-1">Mẹo hữu ích</h3>
+<p class="text-sm text-[#131811] dark:text-gray-300">Bạn có thể sử dụng thang máy để lên núi nếu không muốn đi bộ. Hãy hỏi giá trước khi mua sắm tại làng đá.</p>
+</div>
+</div>
+</div>
+<!-- Map Section -->
+<div class="mt-16">
+<h2 class="text-[#131811] dark:text-gray-100 text-2xl font-bold leading-tight tracking-[-0.015em] mb-6 text-center">Bản đồ tổng quan các điểm đến</h2>
+<div class="w-full h-96 bg-gray-200 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A stylized map showing points of interest in a tourist area." data-location="Da Nang" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDva7gcVLNmGR6Gl-mrnmTRbZer7NpZOfetILuOsS3nXO_6JogQgg7cNV-hdBj7fma5IPI2pxRkIfRAvcRAeSzJl3HEVNnc90muaxaDps7fNWv5Ot2Ie9I2_G5w-8wXxrnEtr_0ejJtI4wF_FVyNiDOPx2a0d6Nq--eJa5Cx1UyMw5StCCwAk1yyALycSyMB_W_xuJ8ZSKQrpscyrHFsQJptj1yUUuiEmdirU_ESAeeQ-sOyByK2MBiARhe9P89e2SuMmc1Q5xfpA"/>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="text-center py-10 mt-10 border-t border-solid border-b-[#f2f4f0] dark:border-t-gray-800">
+<div class="flex items-center justify-center gap-4 text-[#131811] dark:text-gray-200 mb-4">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-[#131811] dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em]">Ngũ Hành Sơn</h2>
+</div>
+<p class="text-[#6f8863] dark:text-gray-400 text-sm">© 2024 Ngũ Hành Sơn. Mọi quyền được bảo lưu.</p>
+<div class="flex justify-center gap-4 mt-4 text-[#131811] dark:text-gray-300">
+<a class="hover:text-primary" href="#">Facebook</a>
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">TripAdvisor</a>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
